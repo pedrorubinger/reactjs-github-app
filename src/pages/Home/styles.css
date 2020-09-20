@@ -1,0 +1,124 @@
+/* HOME PAGE CSS */
+
+#home-container {
+    margin: auto;
+    max-width: 800px;
+}
+
+#home-container #home-header {
+    background-color: #1F1F1F;
+    height: 126px;
+    width: 100%;
+    margin: 0;
+}
+
+#home-container #home-header #home-header-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    color: #fff;
+}
+
+#home-container #home-header p {
+    font-size: 17px;
+}
+
+#home-container #home-header span {
+    display: flex;
+}
+
+#home-container #home-header svg#logout-icon {
+    margin-left: 10px;
+}
+
+#home-container #home-header span:hover {
+    cursor: pointer;
+}
+
+#home-container #home-header img {
+    margin: auto;
+    margin-top: 10px;
+}
+
+#home-container #home-content {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+    box-shadow: none;
+}
+
+#home-container #home-content #home-user-info {
+    padding: 0 25px;
+    margin-top: 80px;
+}
+
+#home-container #home-content #home-user-info p#user-info-name {
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: -5px;
+}
+
+#home-container #home-content #home-user-info p#user-info-email {
+    margin-bottom: -9px;
+}
+
+#home-container #home-content #home-user-stats {
+    background-color: #5252525D;
+    margin-top: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    border-top: 1px solid rgb(151, 151, 151);
+    border-bottom: 1px solid rgb(151, 151, 151);
+}
+
+#home-container #home-content #home-user-stats .home-user-stats-item p {
+    text-align: center;
+    font-size: 17px;
+}
+
+#home-container #home-content #home-user-stats .home-user-stats-item p:first-child {
+    font-size: 40px;
+    margin-top: 12px;
+    margin-bottom: -10px;
+    font-weight: bold;
+}
+
+#home-container #home-content #home-user-bio {
+    margin-top: 45px;
+    /* margin-bottom: 200px; */
+    padding: 0 25px;
+    padding-bottom: 30px
+}
+
+#home-container #home-content #home-user-bio p:first-child {
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: -5px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 600px) {
+    #home-container #home-content #home-user-bio {
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width: 800px) {
+    #home-container #home-content {
+        background-color: #fff;
+        color: black;
+        box-shadow: 0px 1px 3px rgb(36, 36, 36);       
+    }
+
+    #home-container #home-content .yellow-marker {
+        display: none;
+    }
+
+    #home-container #home-content #home-user-stats {
+        background-color: #acacac;
+    }
+}

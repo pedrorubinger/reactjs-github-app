@@ -1,0 +1,12 @@
+/* FOLLOWERS PAGE CSS */
+
+#followers-container {
+    margin: auto;
+    max-width: 800px;
+}
+
+@media (max-width: 600px) {
+    #followers-container #pages-bar-container {
+        margin-bottom: 130px;
+    }
+}

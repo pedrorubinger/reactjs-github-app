@@ -1,0 +1,62 @@
+/* SIGN IN PAGE CSS */
+
+#sign-in-container {
+    height: 100vh;
+    display: flex;
+}
+
+#sign-in-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 375px;
+    margin: auto;
+}
+
+#sign-in-content input,
+#sign-in-content button {
+    border-radius: 8px;
+    padding: 16px;
+    width: 339px;
+    height: 56px;
+    font-size: 20px;
+}
+
+#sign-in-content #sign-in-error-message {
+    color: #CC042A;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding: 0;
+    text-align-last: center;
+    display: block;
+}
+
+#sign-in-content input {
+    margin-top: 35px;
+    margin-bottom: 18px;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0 3px 6px #0000001D;
+    color: #535353;
+}
+
+#sign-in-content button {
+    text-transform: uppercase;
+    background-color: #FFCE00;
+    box-shadow: 0px 3px 6px #0000001D;
+    border: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+#sign-in-content button:hover {
+    cursor: pointer;
+    background-color: #fdd936;
+}
+
+#sign-in-content #sign-in-icon {
+    margin-left: 8px;
+}

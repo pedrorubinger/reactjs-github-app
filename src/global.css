@@ -1,0 +1,116 @@
+/* GLOBAL STYLES */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #292929;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+.link:not(.active-page):hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+img.profile-photo {
+    border-radius: 50%;
+    display: block;
+    border: 3px solid #FFFFFF;
+}
+
+.yellow-marker {
+    position: absolute;
+    width: 20px;
+    background-color: #FFCE00;
+    height: 32px;
+    display: block;
+    left: -10px;
+    border-radius: 6px;
+    z-index: -5;
+}
+
+.cards-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.card-item {
+    border: 1px solid rgb(156, 156, 156);
+    width: 46%;
+    padding: 0 10px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgb(209, 209, 209);
+    margin: 15px auto;
+}
+
+.card-item:last-child {
+    margin-bottom: 30px;
+}
+
+.cards-box .card-item .card-title-group {
+    display: flex;
+    align-items: center;
+}
+
+.cards-box .card-item .card-title-group .login-tag {
+    font-size: 15px;
+}
+
+.empty-message {
+    text-align: center;
+    margin: 30px auto;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 800px) {
+    .yellow-marker {
+        display: none;
+    }
+
+    .cards-box .card-item .card-title-group {
+        min-height: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    .cards-box {
+        box-sizing: border-box;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .card-item {
+        width: 100%;
+        /* margin-left: 25px; */
+        margin: 0;
+        border: none;
+        border-bottom: 1px solid #FFFFFF;
+        border-radius: 0px;
+        border-width: 100%;
+        box-shadow: none;
+    }
+
+    .card-item:last-child {
+        border-bottom: none;
+        margin-bottom: 0px;
+    }
+
+    .card-item p {
+        padding-left: 15px;
+    }
+}
